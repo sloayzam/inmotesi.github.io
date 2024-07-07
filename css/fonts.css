@@ -1,0 +1,29 @@
+@font-face
+{
+    font-family: "TW Cent MT Bold";
+    src: url(fonts/TCCB.TTF) format("truetype");
+}
+
+@font-face
+{
+    font-family: "TW Cent MT Regular";
+    src: url(fonts/TCM.TTF) format("truetype");
+}
+
+
+@font-face
+{
+    font-family: "Roboto Bold";
+    src: url(fonts/Roboto-Bold.ttf) format("truetype");
+}
+@font-face
+{
+    font-family: "Roboto Medio";
+    src: url(fonts/Roboto-Medium.ttf) format("truetype");
+
+}
+@font-face
+{
+    font-family: "Roboto Regular";
+    src: url(fonts/Roboto-Regular.ttf) format("truetype");
+}
