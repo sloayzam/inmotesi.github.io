@@ -11,15 +11,19 @@
     <meta name="author" content="Stefano Loayza"> <!--Metadatos de autor-->
     <meta name="keywords" content="INMOTESI, construcción, inmobiliaria, corretaje, software civil, ingeniería civil, civil engineering, stefanoloayza"> <!--Metadatos de palabras clave para indexación-->
     <meta name="robots" content="index"> <!--Metadatos indexar la página-->
+
     <link rel="icon" href="img\rsc\ico.ico"> <!--Relación para poner icono en pestaña-->
 
-    <link rel="stylesheet" href="css\styles.css"> <!--Relación de conexión para dar estilo--> 
-    <link rel="stylesheet" href="css\fonts.css"> <!--Relación de conexión para dar estilo-->  
+    <link rel="stylesheet" href="css/styles.css"> <!--Relación de conexión para dar estilo--> 
+    <link rel="stylesheet" href="css/style-popup.css"> <!--Relación de conexión para dar estilo--> 
+    <link rel="stylesheet" href="css/fonts.css"> <!--Relación de conexión para dar estilo-->  
+    <link rel="stylesheet" href="js/execute.js"> <!--Relación de conexión para dar estilo-->  
+
 </head>
 
 <body class="background">
 
-    <section>
+    <header>
         <div class="box-header">        
             <div class="grid-header">
                 <img class="grid-item-header" src="img/rsc/logo.webp" alt="Banner image" height="80px">
@@ -34,19 +38,19 @@
                 <a class="grid-item-nav" href="" > PROYECTOS DE DISEÑO </a>
                 <a class="grid-item-nav" href="" > ACADEMIA </a>
             </div>
-    </section>
+        </header>
 
-    <section>
+    <article>
         <div id="banner-container">
             <img id="banner" src="img/rsc/banner.webp" alt="Banner image">          
-            <h1> 
-                <a id="title">@INMOTESI.ec <br></a>
-                <a id="subtitle">Construcción, diseño y corretaje.</a>
-            </h1>     
+            <a id="title">@INMOTESI.ec <br></a>
+            <a id="subtitle">Construcción, diseño y corretaje.</a>
         </div>
-    </section>        
-    <div class="linea"></div> 
-    <section class="box-text">       
+    </article>
+
+    <div class="linea"></div>
+
+    <article class="box-text">       
         <div class="grid-text">
                 <div class="grid-text-item">
                     <p>
@@ -59,16 +63,33 @@
                     </p>
                 </div>
         </div>        
-    </section>   
+    </article> 
+
     <div class="linea"></div>
 
-    <footer class="box-footer">        
-        <!-- Etiqueta <a> sirve para poner atributos a referencias locales o externas -->
-            <a href="pages/legal-notice.html"> Aviso legal </a>
-            <a href="pages/privacy-policy.html"> Política de privacidad </a>
-            <a href="pages/downloads.html"> Política de privacidad </a>
-            <p> © 2024 INMOTESI. Todos los derechos reservados.</p>
+    <footer class="box-footer">      
+        <div class="grid-footer">
+                <p class="grid-footer-item01"> © 2024 INMOTESI. Todos los derechos reservados.</p>
+                <a class="grid-footer-item02" href="pages/legal-notice.html"> Aviso legal </a>
+                <a class="grid-footer-item03" href="pages/privacy-policy.html"> Política de privacidad </a> 
+        </div>
     </footer>
+    
+    <!--*Pop UP-->
+
+    <div class="body-container-popup">
+        <div id="modal-container-show" class="modal-container-show">
+            <div class="modal">
+                <h1>Gracias por visitarnos</h1>
+                    <p>
+                        Sitio en construcción. Pronto estaremos listos.
+                    </p>
+                <button id="close">Salir</button>
+            </div>    
+        </div>
+    </div>
+    <script> src="js/execute.js" </script> 
+
 </body>
 
 </html>
