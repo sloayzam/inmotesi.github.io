@@ -86,6 +86,8 @@
     display: grid;
     align-content: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 .box-text
 {

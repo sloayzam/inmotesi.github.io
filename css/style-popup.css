@@ -16,12 +16,12 @@
 .modal-container-show
 {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: hsla(0, 0%, 0%, 0.897);
     align-items: center;
     justify-content: center;
     position: fixed;
-    pointer-events: none;
-    opacity: 0.5;  
+    pointer-events: none; 
+    opacity: 0;
     top: 0;
     left: 0;
     height: 100vh;
@@ -48,12 +48,44 @@
     text-align: center;
 }
 
-.modal h1 {
+.modal h1 
+{
+    font-family: "Roboto Bold";
     margin: 0;
 }
 
 .modal p 
 {   
     opacity: 0.7;
+    font-size: 0.938rem;
+    
+    font-family: "Roboto Regular";
+    margin: 0;
+}
+
+
+button 
+{
+    font-family: "Roboto Regular";
+    background-color: #cccccc;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.39);
+    color: #000000;
     font-size: 14px;
+    padding: 10px 25px;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+button:hover
+{
+    font-family: "Roboto Regular";
+    background-color: #949494;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.349);
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 25px;
+    transform: scale(1.05);
 }
