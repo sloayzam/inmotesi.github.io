@@ -2,6 +2,7 @@
 *
 {
     box-sizing: border-box;
+    display: 100vw;
 }
 .body-container-popup
 {
@@ -64,7 +65,7 @@
 }
 
 
-button 
+#close 
 {
     font-family: "Roboto Regular";
     background-color: #cccccc;
@@ -77,6 +78,27 @@ button
     transition: 0.5s;
     margin-top: 20px;
 }
+
+#close:hover
+{
+    font-family: "Roboto Regular";
+    background-color: #949494;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.349);
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 25px;
+    transform: scale(1.05);
+}
+
+button
+{
+    border: transparent;
+    padding: 10px 25px;
+    transition: 0.5s;
+}
+
 button:hover
 {
     font-family: "Roboto Regular";
