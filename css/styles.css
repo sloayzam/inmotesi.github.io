@@ -130,7 +130,6 @@
     justify-content: center;
 }
 
-
 .box-footer
 {
     height: 50px;
@@ -193,11 +192,11 @@
     font-size: 15px;
     font-weight: 1;
     padding: 10px;  
-    text-align: right;
+    text-align: center;
 
     display: grid;
     align-content: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .linea 
