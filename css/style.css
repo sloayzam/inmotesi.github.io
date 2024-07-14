@@ -20,7 +20,7 @@
     width: 100vw;
     max-width: 750px;
     display: grid;    
-    grid-template-columns: 60% 20% 20%;
+    grid-template-columns: 80% 10% 10%;
     grid-template-rows: 100px;
     justify-content: space-around; /*Distribución horizontal*/
     align-items: center; /*Alineación vertical*/ 
@@ -40,14 +40,35 @@
     justify-self: end; /*Alineación horizontal*/
 }
 
+/* USAR NUEVAMENTE CUANDO SE ESCRIBAN LETRAS
 .header-grid a:hover {
     cursor:pointer;
     font-family: "Roboto Medio";
     color: rgb(145, 145, 145);
     text-decoration: underline;
     display: grid;
+    justify-self: end; /*Alineación horizontal
+    align-items: center; /*Alineación vertical
+}*/
+
+.header-grid .media {
+    opacity: 0.6;
+
+    width: 48px;
+    height: 48px;
+    margin: 0;
     justify-self: end; /*Alineación horizontal*/
-    align-items: center; /*Alineación vertical*/
+    transition: 1S;
+}
+
+.header-grid .media:hover {
+    opacity: 1;
+
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    justify-self: end; /*Alineación horizontal*/
+    transform: rotate(15deg) scale(1.05);
 }
 
 /*NAVIGATION*/
@@ -70,6 +91,7 @@
 
 .nav-grid a {
     color: rgb(75, 75, 75);
+    
     text-decoration: none;
     transition: transform 0.5s;
 }
