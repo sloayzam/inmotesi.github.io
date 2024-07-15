@@ -9,6 +9,8 @@
     scroll-behavior: smooth;
 }
 
+@media (min-width: 725px) {
+    
 /*HEADER*/
 
 .header-container {
@@ -316,17 +318,13 @@
     transform: scale(1.05);
 }
 
+.phone-container{display: none;}
+
+}
 
 /*RESPONSIVE WEB*/
+
 @media (max-width: 725px) {
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        margin: auto;
-        font-size: 10px; /*BASE PARA USAR MEDIDAS EM*/
-        scroll-behavior: smooth;
-    }
 
     .phone-container {
         background-color: #131f31;
