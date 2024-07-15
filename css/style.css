@@ -5,6 +5,7 @@
     margin: auto;
     font-size: 10px; /*BASE PARA USAR MEDIDAS EM*/
     max-width: 2000px;
+    height: auto;
     scroll-behavior: smooth;
 }
 
@@ -13,17 +14,19 @@
 .header-container {
     background-color: #131f31;
     width: 100vw;
-    height: 100px;    
+    height: 100px;
 }
 
 .header-grid {
     width: 100vw;
-    max-width: 750px;
+    max-width: 700px;
     display: grid;    
     grid-template-columns: 80% 10% 10%;
     grid-template-rows: 100px;
     justify-content: space-around; /*Distribución horizontal*/
     align-items: center; /*Alineación vertical*/ 
+    padding: 0 20px 0 20px;
+    min-width: 700px;
 }
 
 .header-grid img {    
@@ -76,7 +79,8 @@
 .nav-grid
 {
     width: 100vw;
-    height: 50px;
+    height: fit-content;
+    min-height: 50px;
     background-color: whitesmoke;
     box-shadow: inset 0px 0 50px #0000005b;
     display: grid;
@@ -87,11 +91,12 @@
 
     position: relative;
     z-index: 20;
+    min-width: 700px;
 }
 
 .nav-grid a {
     color: rgb(75, 75, 75);
-    
+    display: flex;
     text-decoration: none;
     transition: transform 0.5s;
 }
@@ -115,14 +120,15 @@
 #banner-container
 {
     width: 100vw;
-    max-width: 700px;
-
+    max-width: 600px;
+    
     position: relative; /*Posición padre para que #banner-container h1 ponga la posición modal, y de paso para el z-index*/
     z-index: 10;
 }
 
 #banner-container img {
-    max-width: 700px; /*Debe ir tal como en el contenedor del banner para que sea medianamente responsiva*/
+    width: 100%;
+    max-width: 600px; /*Debe ir tal como en el contenedor del banner para que sea medianamente responsiva*/
 
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -130,6 +136,8 @@
     border-bottom-right-radius: 30px;
 
     justify-items: center;
+
+    margin-right: 50px;
 }
 
 #banner-container h1 {
@@ -174,14 +182,14 @@
 .intro-container p {
     max-width: 700px;
     height: auto;
-    padding: 0 0 5em 0; /*Importante para separar el footing del texto final*/
+    padding: 0 2em 5em 2em; /*Importante para separar el footing del texto final*/
     align-items: start;
 }
 
 .intro-container ol {
     max-width: 600px;
     height: auto;
-    padding: 0 0 5em 0; /*Importante para separar el footing del texto final*/
+    padding: 0 2em 5em 2em; /*Importante para separar el footing del texto final*/
     align-items: start;
 }
 
@@ -198,12 +206,13 @@
 
 .footer-grid {
     width: 100vw;
-    max-width: 1000px;
+    max-width: 700px;
     display: grid;    
-    grid-template-columns: 60% 20% 20%;
+    grid-template-columns: 70% 15% 15%;
     grid-template-rows: 50px;
     justify-content: space-around; /*Distribución horizontal*/
     align-items: center; /*Alineación vertical*/ 
+    padding: 0 20px 0 20px;
 }
 
 .footer-grid p {
@@ -212,6 +221,7 @@
     text-decoration: none;
     margin: 0;
     justify-self: start; /*Alineación horizontal*/
+    padding: 0 20px 0 0;
 }
 
 .footer-grid a {
@@ -219,6 +229,7 @@
     text-decoration: none;
     margin: 0;
     justify-self: end; /*Alineación horizontal*/
+    padding: 0 0 0 20px;
 }
 
 .footer-grid a:hover {
@@ -303,4 +314,67 @@
     width: 120px;
     height: 40px;
     transform: scale(1.05);
+}
+
+
+/*RESPONSIVE WEB*/
+@media (max-width: 725px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        font-size: 10px; /*BASE PARA USAR MEDIDAS EM*/
+        scroll-behavior: smooth;
+    }
+
+    .phone-container {
+        background-color: #131f31;
+        width: 100vw;
+        height: 100vh;
+        align-content: center;
+    }
+
+    .phone-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, 1);
+    }
+
+    .pl-inmotesi {    
+        width: 200px;
+        height: 200px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .phone-media {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-auto-rows: minmax(75px, 75px);
+        margin: auto;
+        justify-content: center;
+        padding: 40px;
+        column-gap: 30px;
+    }
+
+    .pm-w {    
+        width: 75px;
+        height: 75px;
+    }
+
+    .pm-i {  
+        width: 75px;
+        height: 75px;
+    }  
+
+
+    .header-container {display: none;}
+    .header-grid {display: none;}
+    .nav-grid {display: none;}
+    #banner-container {display: none;}
+    .intro-container {display: none;}
+    .linea {display: none;}
+    .footer-container {display: none;} 
+    .popup-container {display: none;}
 }
