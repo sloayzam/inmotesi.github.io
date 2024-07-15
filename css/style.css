@@ -329,6 +329,7 @@
     .phone-container {
         background-color: #131f31;
         width: 100vw;
+        min-width: 200px;
         height: 100vh;
         align-content: center;
     }
@@ -350,10 +351,12 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-auto-rows: minmax(75px, 75px);
-        margin: auto;
+        margin: 60px 0 0 0;
         justify-content: center;
-        padding: 40px;
+        padding: 20px;
         column-gap: 30px;
+
+        background-color: rgba(255, 255, 255, 0.15);
     }
 
     .pm-w {    
@@ -366,13 +369,12 @@
         height: 75px;
     }  
 
-
     .header-container {display: none;}
     .header-grid {display: none;}
     .nav-grid {display: none;}
     #banner-container {display: none;}
-    .intro-container {display: none;}
     .linea {display: none;}
+    .intro-container {display: none;}
     .footer-container {display: none;} 
     .popup-container {display: none;}
 }
