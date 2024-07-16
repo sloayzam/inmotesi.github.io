@@ -318,9 +318,62 @@
     transform: scale(1.05);
 }
 
+/*CARRUSEL DE IMÁGENES PARA LAS PAGINAS DE CONSTRUCCIÓN Y DISEÑO*/
+
+.slider-container {
+    width: 500px; /*Lás imágenes que pongo deben tener 1000x600*/
+    max-width: 1000px;
+    height: calc(100vh - 200px);    
+    margin: auto;
+    overflow: hidden;
+
+    display: grid;
+    justify-content: center;
+}
+
+.slider-container ul {
+    display: flex;
+    width: 400%; /*Cada 100% es una imagen*/
+    animation: slideIMG 10s infinite ease-in-out;
+}
+
+.slider-container li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-container img {
+    width: 100%;
+}
+
+.slider-description {
+    background-color: rgba(255, 255, 255, 0.400);
+    position: absolute;
+    text-align: center;
+    padding: 0 20%;
+    top: 120px;
+}
+
+@keyframes slideIMG {
+
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
 .phone-container{display: none;}
 
 }
+
 
 /*RESPONSIVE WEB*/
 
@@ -349,7 +402,7 @@
         grid-row: 1;
 
         animation-name: circleAnimation;
-        animation-duration: 2s;
+        animation-duration: 3s;
         animation-iteration-count: 1;
         animation-direction: alternate;
         animation-timing-function: linear;
@@ -436,4 +489,6 @@
     .intro-container {display: none;}
     .footer-container {display: none;} 
     .popup-container {display: none;}
+    .slider-container {display: none;}
+    .slider-description {display: none;}
 }
