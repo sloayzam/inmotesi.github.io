@@ -320,55 +320,9 @@
 
 /*CARRUSEL DE IMÁGENES PARA LAS PAGINAS DE CONSTRUCCIÓN Y DISEÑO*/
 
-.slider-container {
-    width: 500px; /*Lás imágenes que pongo deben tener 1000x600*/
-    max-width: 1000px;
-    height: calc(100vh - 200px);    
-    margin: auto;
-    overflow: hidden;
 
-    display: grid;
-    justify-content: center;
-}
 
-.slider-container ul {
-    display: flex;
-    width: 400%; /*Cada 100% es una imagen*/
-    animation: slideIMG 10s infinite ease-in-out;
-}
-
-.slider-container li {
-    width: 100%;
-    list-style: none;
-    position: relative;
-}
-
-.slider-container img {
-    width: 100%;
-}
-
-.slider-description {
-    background-color: rgba(255, 255, 255, 0.400);
-    position: absolute;
-    text-align: center;
-    padding: 0 20%;
-    top: 120px;
-}
-
-@keyframes slideIMG {
-
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
+/*FINALIZACIÓN PARA APLICAR EL CIERRE DEL RESPONSIVE WEB*/
 
 .phone-container{display: none;}
 
@@ -402,9 +356,9 @@
         grid-row: 1;
 
         animation-name: circleAnimation;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
         animation-timing-function: linear;
     }
 
@@ -416,7 +370,7 @@
             box-shadow: 0px 0px 15px 15px #ec731e;
             -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
             */
-            opacity: 0;
+            transform: scale(1.0);
         }
         25% {
             /*
@@ -425,7 +379,7 @@
             box-shadow: 0px 0px 15px 15px #ec731e;
             -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
             */
-            transform: translateX(-100%);
+            transform: scale(1.05);
         }   
         50% {
             /*
@@ -434,7 +388,7 @@
             box-shadow: 0px 0px 15px 15px #ec731e;
             -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
             */
-            transform: translateX(0%);
+            transform: scale(1.10);
         }        
         75% {
             /*
@@ -443,7 +397,7 @@
             box-shadow: 0px 0px 15px 15px #ec731e;
             -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
             */
-            transform: translateX(+100%);
+            transform: scale(1.15);
         }     
         100% {
             /*
@@ -452,8 +406,7 @@
             box-shadow: 0px 0px 15px 15px #4e4640;
             -webkit-box-shadow: 0px 0px 15px 15px #ed0c84;
             */
-            transform: translateX(0%);
-            opacity: 1;
+            transform: scale(1.20);
         }
     }
 
@@ -466,8 +419,13 @@
         padding: 20px;
         column-gap: 30px;
 
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: white;
     }
+
+    .phone-media:hover {
+        filter: drop-shadow(0 -4mm 2mm rgba(0, 161, 210, 0.226));
+    }
+
 
     .pm-w {    
         width: 75px;
