@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-size: 10px; /*BASE PARA USAR MEDIDAS EM*/
+    scroll-behavior: smooth;
+}
+
+.carrousel{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.conteCarrousel{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-color: rgb(190, 190, 190);
+    opacity: 0.85;
+    padding: 25px;
+    box-sizing: border-box;
+    top: 20px;
+    position: relative;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%; 
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.hover-text:hover{
+    transform: scale(1.5);
+    color: blue;
+    opacity: 0.85;
+}
+
+#itemCarrousel-01{
+    background-color: rgb(61, 26, 56);
+}
+
+#itemCarrousel-02{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-03{
+    background-color: rgb(50, 226, 79);
+}
+
+#itemCarrousel-04{
+    background-color: rgb(61, 26, 56);
+}
+
+#itemCarrousel-05{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-06{
+    background-color: rgb(50, 226, 79);
+}
+
+#itemCarrousel-07{
+    background-color: rgb(61, 26, 56);
+}
+
+#itemCarrousel-08{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-09{
+    background-color: rgb(50, 226, 79);
+}
+
+#itemCarrousel-10{
+    background-color: rgb(241, 15, 34);
+}
+
+.conteCarrouselController{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 3em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+    font-size: 1.5em;
+    opacity: 0.5;
+}
