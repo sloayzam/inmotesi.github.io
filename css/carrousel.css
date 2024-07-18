@@ -10,7 +10,9 @@
 .carrousel{
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    zoom: 0.8;
 }
 
 .conteCarrousel{
